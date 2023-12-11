@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice of action</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        a.register {
+            background-color: #4285f4;
+        }
+
+        a.login {
+            background-color: #4caf50;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Choice of action</h2>
+
+    <a class="register" href="#" onclick="redirectToRegister()">Sign up</a>
+    <a class="login" href="#" onclick="redirectToLogin()">Sign in</a>
+    <script>
+        function redirectToRegister() {
+            window.location.href = "/register";
+        }
+
+        function redirectToLogin() {
+            window.location.href = "/login";
+        }
+    </script>
+</div>
+
+</body>
+</html>
