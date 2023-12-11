@@ -6,26 +6,26 @@
 1. **Clone the Repository:**
 
    ```bash
-    git clone https://github.com/Marriammi/
+    git clone https://github.com/Marriammi/store.git
    ```
 
 2. **Create a virtual environment (optional but recommended):**
    ```bash
-    python -m venv myenv
+    python -m venv venv
    ```
 
 3.  **Activate the virtual environment:**
    ```bash
-    myenv\Scripts\activate
+    venv\Scripts\activate
    ```
 
-3. **Install Dependencies:**
+4. **Install Dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Start the Server:**
+5. **Start the Server:**
 
    ```bash
    flask run
